@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta-Learn</title>
+    <link rel="stylesheet" href="questions_page_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div onclick="redirect('../landing_page/index.html')"class="logo">
+            <p>Meta-Learn</p>
+          </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="questionsDiv" class="questions-div">
+            <div id="titleDiv" class="title-div">
+                <h1 id="title"></h1>
+            </div> 
+            <div id="dynamicDiv" class="dynamic-content">
+
+                <!-- question 1 -->
+                <div class="answer-div" id="answerDiv">
+                    <input type="text" name="" id="" placeholder="Type any topic name which excites you">
+                </div>
+
+                <!-- question 2 -->
+                <div id="optionsDiv" class="options">
+                    <ul>
+                        <li>
+                            <input type="radio" id="f-option" name="selector">
+                            <label for="f-option">Beginner, Learning for the first time</label>
+                            
+                            <div class="check"></div>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" id="s-option" name="selector">
+                            <label for="s-option">Intermediate, Somewhat familiar, I have a basic understanding</label>
+                            
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" id="t-option" name="selector">
+                            <label for="t-option">Advanced, Want to explore more</label>
+                            
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- question 3 -->
+                <div id="priceDiv" class="price-div">
+                    <div id="startDiv" class="range-div">
+                        <label for="startRange">Starting Price</label>
+                        <input id="startRange" type="number">
+                    </div>
+                    <div id="endDiv" class="range-div">
+                        <label for="endRange">Ending Price</label>
+                        <input id="endRange" type="number">
+                    </div>
+                </div>
+                <!-- question 4 -->
+
+            </div> 
+            <div id="btnDiv" class="btn-div">
+                <input name="nextBtn" id="nextBtn" type="button" value="Next" onclick="nextQuestion()">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="questions_page.js"></script>
+</html>
